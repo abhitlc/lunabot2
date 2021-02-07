@@ -280,15 +280,18 @@ console.log(banner.string)
 	console.log(color('[','white'), color('!','red'), color(']','white'), color(' SUBSCRIBE YT RAMLAN CHANNEL'))
 })
 
-fs.existsSync('./Ramlan.json') && client.loadAuthInfo('./Ramlan.json')
-client.on('connecting', () => {
- start('2', 'Ramlan Connecting...')
-    })
-    client.on('open', () => {
-     success('2', 'Ramlan Connected')
-})
-client.loadAuthInfo('./Ramlan.json')
-client.connect();
+	client.on('credentials-updated', () => {
+		fs.writeFileSync('./Ramlan.json', JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
+		info('2', 'ingfokan cuyy...')
+	})
+	fs.existsSync('./Ramlan.json') && client.loadAuthInfo('./Ramlan.json')
+	client.on('connecting', () => {
+		start('2', 'Ramlan Connecting...')
+	})
+	client.on('open', () => {
+		success('2', 'Ramlan Connected')
+	})
+	client.connect({timeoutMs: 30*1000})
 
 client.on('group-participants-update', async (anu) => {
 		if (!welkom.includes(anu.jid)) return
