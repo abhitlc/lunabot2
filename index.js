@@ -822,13 +822,13 @@ switch(command) {
                    if (!isRegistered) return reply(ind.noregis())
                    if (isLimit(sender)) return reply(ind.limitend(pusname))
                      teks = body.slice(9)
-                     hmm = await fetchJson(`https://api.vhtear.com/igprofile?query=${teks}&apikey=${VhtearKey}`, {method: 'get'})
+                     anu = await fetchJson(`https://api.vhtear.com/igprofile?query=${teks}&apikey=${VhtearKey}`, {method: 'get'})
                      reply('「❗」Sabar Lagi Stalking IG nya kak')
-                     buffer = await getBuffer(hmm.data.picture)
-                     hasil = `YAHAHA TELAH DI STALK BOS KU UNTUK USERNAME ${teks} \n\n *Username?* : _${hmm.data.result.username}_ \n *Nama??* : _${hmm.data.result.full_name}_ \n *Jumlah Follower??﹦?* : _${hmm.data.result.follower}_ \n *Jumlah Following?* : _${hmm.data.result.follow}_ \n *Jumlah Post?* : _${hmm.data.result.post_count}_ \n *Biografi?? :* _${hmm.data.result.biography}`
+                     buffer = await getBuffer(anu.result.picture)
+                     hasil = `YAHAHA TELAH DI STALK BOS KU UNTUK USERNAME ${teks} \n\n *Username?* : _${anu.result.username}_ \n *Nama??* : _${anu.result.full_name}_ \n *Jumlah Follower??﹦?* : _${anu.result.follower}_ \n *Jumlah Following?* : _${anu.result.follow}_ \n *Jumlah Post?* : _${anu.result.post_count}_ \n *Biografi?? :* _${anu.result.biography}`
                     client.sendMessage(from, buffer, image, {quoted: mek, caption: hasil})
                     await limitAdd(sender)
-					break
+			       break
 				case 'daftar':
 				if (isBanned) return reply(ind.baned())
                 if (isRegistered) return  reply(ind.rediregis())
