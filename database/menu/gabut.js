@@ -24,6 +24,7 @@ Berikut adalah fitur yang ada pada bot ini!✨
 ┃│➸ *${prefix}truth*
 ┃│➸ *${prefix}dare*
 ┃│➸ *${prefix}timer*
+┃│➸ *${prefix}simi*
 ┃╰───────────────────
 ┗━━━━━━━━━━━━━━━━━━━━┛
 🔰 -----[ *POWERED BY ${ownerName}* ]----- 🔰`
