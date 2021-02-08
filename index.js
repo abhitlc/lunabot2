@@ -37,10 +37,10 @@ const ffmpeg = require('fluent-ffmpeg')
 const cd = 4.32e+7
 const { removeBackgroundFromImageFile } = require('remove.bg')
 const { ind } = require('./language')
-const vcard = 'BEGIN:VCARD\n' 
-            + 'VERSION:3.0\n' 
-            + 'FN:RAMLAN ID\n' 
-            + 'ORG:OWNER BOTZ;\n' 
+const vcard = 'BEGIN:VCARD\n' // KASIH WM GUE
+            + 'VERSION:3.0\n' // RAMLAN ID
+            + 'FN:RAMLAN ID\n' // JAN NGEYEL AJG
+            + 'ORG:OWNER BOTZ;\n'
             + 'TEL;type=CELL;type=VOICE;waid=6285559240360:+62 855-5924-0360\n' 
             + 'END:VCARD' 
 prefix = '!'
@@ -55,12 +55,12 @@ cr = '*𝐁𝐀𝐁𝐘 𝐁𝐎𝐓𝐙 𝐕𝐄𝐑𝐈𝐅𝐈𝐄𝐃*'
 const ownerNumber = ["6285559240360@s.whatsapp.net","6285559240360@s.whatsapp.net"]
 const botName = '𝐁𝐀𝐁𝐘 𝐁𝐎𝐓𝐙'
 const ownerName = '𝗥𝗮𝗺𝗹𝗮𝗻 𝗜𝗗'
-const BarBarKey = 'YOUR_APIKEY' // APIKEY DOWNLOAD FILE
-const VhtearKey = 'YOUR_APIKEY' // YANG DI YOUTUBE
-const TobzKey = 'YOUR_APIKEY' // JANGAN MAU ENAK DOANG
-const XteamKey = 'YOUR_APIKEY' // RAMLAN GANS NO DEBAT
+const BarBarKey = 'IDxO1TFYnKADlX4pxcHa' // APIKEY DOWNLOAD FILE
+const VhtearKey = 'PUNYARAMLAN' // YANG DI YOUTUBE
+const TobzKey = 'BotWeA' // JANGAN MAU ENAK DOANG
+const XteamKey = 'RAMLANGANS' // APIKEY XTEAM BELI SENDIRI:V
 /*
-]=====> SETTINGS <=====[
+]=====> SC BY RAMLAN ID <=====[
 */
 
 /*       
@@ -637,7 +637,7 @@ switch(command) {
 				if (isBanned) return reply(ind.baned())
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
-				if (args.length < 1) return reply('Teksnya mana kak? Contoh : ${prefix}nulis1 Ramlan baik hati')
+				if (args.length < 1) return reply(`Teksnya mana kak? Contoh : ${prefix}nulis1 Ramlan baik hati`)
 				ramlan = body.slice(8)
 				reply('「❗」WAIT BRO GUE NULIS DUMLU YAKAN')
 				buff = await getBuffer(`https://api.xteam.xyz/magernulis2?text=${ramlan}&APIKEY=${XteamKey}`)
@@ -649,7 +649,7 @@ switch(command) {
 				if (isBanned) return reply(ind.baned())
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
-				if (args.length < 1) return reply('Teksnya mana kak? Contoh : ${prefix}nulis2 Ramlan baik hati')
+				if (args.length < 1) return reply(`Teksnya mana kak? Contoh : ${prefix}nulis2 Ramlan baik hati`)
 				laysha = body.slice(8)
 				reply('「❗」WAIT BRO GUE NULIS DUMLU YAKAN')
 				buff = await getBuffer(`https://api.xteam.xyz/magernulis3?text=${laysha}&APIKEY=${XteamKey}`)
@@ -686,7 +686,7 @@ switch(command) {
 				var gh = body.slice(11)
 				var nin = gh.split("&")[0];
 				var ja = gh.split("&")[1];
-				if (args.length < 1) return reply('「❗」Contoh : ${prefix}ninjalogo Ramlan & Gans')
+				if (args.length < 1) return reply(`「❗」Contoh : ${prefix}ninjalogo Ramlan & Gans`)
 				reply(ind.wait())
 				buffer = await getBuffer(`https://api.xteam.xyz/textpro/ninjalogo?text=${nin}&text2=${ja}&APIKEY=${XteamKey}`)
 				client.sendMessage(from, buffer, image, {quoted: mek})
@@ -713,7 +713,7 @@ switch(command) {
 				var gh = body.slice(9)
 				var porn = gh.split("&")[0];
 				var hub = gh.split("&")[1];
-				if (args.length < 1) return reply('「❗」Contoh : ${prefix}pornhub Ramlan & Hub')
+				if (args.length < 1) return reply(`「❗」Contoh : ${prefix}pornhub Ramlan & Hub`)
 				reply(ind.wait())
 				buffer = await getBuffer(`https://api.xteam.xyz/textpro/ph?text=${porn}&text2=${hub}&APIKEY=${XteamKey}`)
 				client.sendMessage(from, buffer, image, {quoted: mek})
@@ -727,7 +727,7 @@ switch(command) {
 					var gh = body.slice(12)
 					var gem = gh.split("&")[0];
 					var bok = gh.split("&")[1];
-					if (args.length < 1) return reply('[❗] Contoh : ${prefix}gemboktext 11 01 2021 & Ramlan dan Nadia')
+					if (args.length < 1) return reply(`[❗] Contoh : ${prefix}gemboktext 11 01 2021 & Ramlan dan Nadia`)
 					reply(ind.wait())
 					buffer = await getBuffer(`https://api.vhtear.com/padlock?text1=${gem}&text2=${bok}&apikey=${VhtearKey}`)
 					client.sendMessage(from, buffer, image, {quoted: mek})
@@ -740,19 +740,28 @@ switch(command) {
 					var gh = body.slice(12)
 					var gli = gh.split("&")[0];
 					var tch = gh.split("&")[1];
-					if (args.length < 1) return reply('[❗] Contoh : ${prefix}glitchtext Ramlan & Gans')
+					if (args.length < 1) return reply(`[❗] Contoh : ${prefix}glitchtext Ramlan & Gans`)
 					reply(ind.wait())
 					buffer = await getBuffer(`https://api.xteam.xyz/textpro/glitch?text=${gli}&text2=${tch}&APIKEY=${XteamKey}`)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					await limitAdd(sender)
 					break
+				case 'simi':
+				if (isBanned) return reply(ind.baned())
+				if (!isRegistered) return reply(ind.noregis())
+				if (isLimit(sender)) return reply(ind.limitend(pusname))
+					if (args.length < 1) return reply(`Textnya mana um? Contoh : ${prefix}simi hallo`)
+					teks = body.slice(5)
+					anu = await fetchJson(`http://vinz.zeks.xyz/api/sim?q=${teks}&apikey=apivinz`)
+					reply(anu.result)
+					break					
 				case 'tts':
 				if (isBanned) return reply(ind.baned())
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (args.length < 1) return client.sendMessage(from, 'Kode bahasanya mana kak | contoh : ${prefix}tts id ah yamate kudasai', text, {quoted: mek})
 					const gtts = require('./lib/gtts')(args[0])
-					if (args.length < 2) return client.sendMessage(from, 'Teksnya mana kak | contoh : ${prefix}tts id ah yamate kudasai', text, {quoted: mek})
+					if (args.length < 2) return client.sendMessage(from, `Teksnya mana kak | contoh : ${prefix}tts id ah yamate kudasai`, text, {quoted: mek})
 					dtt = body.slice(8)
 					ranm = getRandom('.mp3')
 					rano = getRandom('.ogg')
@@ -1762,7 +1771,7 @@ case 'hartatahta':
 if (isBanned) return reply(ind.baned())
 if (!isRegistered) return reply(ind.noregis())
 if (isLimit(sender)) return reply(ind.limitend(pusname))
-if (args.length < 1) return reply('「❗」Contoh : ${prefix}hartatahta botwea')
+if (args.length < 1) return reply(`「❗」Contoh : ${prefix}hartatahta botwea`)
 har = body.slice(12)
 reply('「❗」Hirti Tihti Tai Anjg :v')
 buffer = await getBuffer(`https://api.vhtear.com/hartatahta?text=${har}&apikey=${VhtearKey}`)
@@ -1773,7 +1782,7 @@ case 'cloudtext':
 if (isBanned) return reply(ind.baned())
 if (!isRegistered) return reply(ind.noregis())
 if (isLimit(sender)) return reply(ind.limitend(pusname))
-if (args.length < 1) return reply('「❗」Contoh : ${prefix}cloudtext Ramlan')
+if (args.length < 1) return reply(`「❗」Contoh : ${prefix}cloudtext Ramlan`)
 cloud = body.slice(11)
 reply('「❗」Bentar Bro Terbang dumlu yakan')
 buffer = await getBuffer(`https://api.xteam.xyz/textpro/cloudtext?text=${cloud}&APIKEY=${XteamKey}`)
