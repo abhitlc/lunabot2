@@ -17,7 +17,7 @@ The following are the features of the bot ini!✨
 ┃│➸ *${prefix}wibu*
 ┃│➸ *${prefix}loli*
 ┃│➸ *${prefix}neko*
-┃│➸ *${prefix}blowjob*
+┃│➸ *${prefix}18+*
 ┃│➸ *${prefix}husbu*
 ┃│➸ *${prefix}kpop*
 ┃│➸ *${prefix}anjing*
