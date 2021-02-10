@@ -989,7 +989,7 @@ switch(command) {
                   if (isBanned) return reply(ind.baned())				
 					if (!isGroup) return reply(ind.groupo())
 					if (!isGroupAdmins) return reply(ind.admin())
-					if (args.length < 1) return reply'Ekhemm >_<')
+					if (args.length < 1) return reply('AYSERI>_<')
 					if (Number(args[0]) === 1) {
 						if (isWelkom) return reply('*WELCOME*')
 						welkom.push(from)
