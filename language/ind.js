@@ -1,9 +1,9 @@
 exports.wait = () => {
-	return`*「❗」WAIT GANS*`
+	return`*「❗」WAIT MWONU*`
 }
 
 exports.succes = () => {
-	return`*「 SUKSES 」*`
+	return`*「 SUCCESS 」*`
 }
 
 exports.lvlon = () => {
@@ -23,23 +23,23 @@ exports.lvlnoon = () => {
 }
 
 exports.noregis = () => {
-	return`*「❗」BELUM DAFTAR*\n*cara daftar ${prefix}daftar nama|umur* \n\n*contoh ${prefix}daftar ramlan|18*`
+	return`*「❗」NOT REGISTERED*\n*TO REGISTER ${prefix}register name/age* \n\n*example ${prefix}register ABHI|18*`
 }
 
 exports.baned = () => {
-	return`*「❗」SORRY SORRY AJA NIH BRO, TAPI KAU SUDAH KU BANNED YAHAHAHA HAYUUU :V*`
+	return`*「❗」SORRY MWONUSE, YOU ARE BANNED HU HU HU :V*`
 }
 
 exports.rediregis = () => {
-	return`*「 SUDAH DAFTAR 」*\n\n*kamu sudah terdaftar kak >_<*`
+	return`*「 ALREADY REGISTERED 」*\n\n*you have registered >_<*`
 }
 
 exports.stikga = () => {
-	return`*「 GAGAL 」Coba ulangi lain kali kak*`
+	return`*「 FAILED 」Try again next time bro*`
 }
 
 exports.linkga = () => {
-	return`*「❗」maaf linknya tidak valid kak*`
+	return`*「❗」LINK INVALID*`
 }
 
 exports.groupo = () => {
@@ -59,11 +59,11 @@ exports.admin = () => {
 }
 
 exports.badmin = () => {
-	return`*「❗」BOT HARUS JADI ADMIN*`
+	return`*「❗」MWONE BOT ADMIN AVANAM*`
 }
 
 exports.nsfwoff = () => {
-	return`*「❗」NSFW GAK AKTIF*`
+	return`*「❗」NSFW IN ACTIVE*`
 }
 
 exports.bug = () => {
@@ -71,7 +71,7 @@ exports.bug = () => {
 }
 
 exports.wrongf = () => {
-	return`*「🤔」Teks nya mana kak?*`
+	return`*「🤔」Where's the text, bro?*`
 }
 
 exports.clears = () => {
@@ -79,11 +79,11 @@ exports.clears = () => {
 }
 
 exports.pc = () => {
-	return`*「❗」REGISTRASI*\n\nuntuk mengetahui apa kamu sudah terdaftar silahkah check message yang saya kirim \n\nNOTE:\n*jika kamu belum mendapatkan pesan. berarti kamu belum menyimpan nomer bot*`
+	return`*「❗」REGISTRATION*\n\nuntuk mengetahui apa kamu sudah terdaftar silahkah check message yang saya kirim \n\nNOTE:\n*jika kamu belum mendapatkan pesan. berarti kamu belum menyimpan nomer bot*`
 }
 
-exports.registered = (namaUser, umurUser, serialUser, time, sender, botName) => {
-	return`*「 REGISTRASI BERHASIL 」*\nUntuk User Info :\n\n*➸ Nama : ${namaUser}*\n*➸ Nomor : wa.me/${sender.split("@")[0]}*\n*➸ Umur : ${umurUser}*\n*➸ Waktu Pendaftaran : ${time}*\n\n*「SN」: ${serialUser}*\n_NOTE : Pesan ini sangat penting :v_`
+exports.registered = (username, userage, serialUser, time, sender, botName) => {
+	return`*「 SUCCESSFUL REGISTRATION 」*\n User Info :\n\n*➸ Name : ${username}*\n*➸ Number : wa.me/${sender.split("@")[0]}*\n*➸ userage : ${userage}*\n*➸ time  : ${time}*\n\n*「SN」: ${serialUser}*\n_NOTE : MADE BY ABHI :v_`
 }
 
 exports.cmdnf = (prefix, command) => {
