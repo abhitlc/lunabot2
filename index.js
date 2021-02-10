@@ -1356,7 +1356,7 @@ switch(command) {
 /*
 ]=====> DOWNLOAD MENU <=====[
 */
-				case 'yutubdl':
+				case 'yt':
 					if (args.length < 1) return reply('Wheres the url um?')
                   if (isBanned) return reply(ind.baned())
 				if (!isRegistered) return reply(ind.noregis())
