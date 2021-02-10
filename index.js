@@ -55,7 +55,7 @@ cr = '*LUNA MWOL VERIFIED*'
 /*
 ]=====> SETTINGS <=====[
 */
-const ownerNumber = ["919074329903@s.whatsapp.net","919074329903@s.whatsapp.net"]
+const ownerNumber = ["919074329903@s.whatsapp.net","918304825484@s.whatsapp.net"]
 const botName = 'LUNA MWOL 2.0'
 const ownerName = 'ABHI SER'
 const BarBarKey = 'IDxO1TFYnKADlX4pxcHa' // APIKEY DOWNLOAD FILE
@@ -319,7 +319,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `GOODBYE... @${num.split('@')[0]}👋* \n_ANGANE AVANUM POYI .. ALLELUM AVAN SHALYAM ARUNNU_`
+				teks = `GOODBYE... @${num.split('@')[0]}👋* \n_ANGANE AVANUM POYI .. ALLELUM AVAN SHALYAM AYIRUNN_`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -680,7 +680,7 @@ switch(command) {
 				quotes = body.slice(1)
 				const quo =['......,']
 				const tes = quo[Math.floor(Math.random() * quo.length)]
-				client.sendMessage(from, ''+tes+'\n\n_By : ⸸Ramlan⸸Panutanque._', text, { quoted: mek })
+				client.sendMessage(from, ''+tes+'\n\n_By : ⸸ABHI⸸BRO._', text, { quoted: mek })
 				await limitAdd(sender)
 				break
 // NINJALOGO				
@@ -970,7 +970,7 @@ switch(command) {
 					tod = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
 					client.sendMessage(from, tod, image, { quoted: mek, caption: '*Dare*\n\n'+ der })
 					break
-                  case 'timer':
+                  case 'tier':
                   if (isBanned) return reply(ind.baned())
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))                  
@@ -1238,7 +1238,7 @@ switch(command) {
 						mentions(teks, mentioned, true)
 						client.groupDemoteAdmin(from, mentioned)
 					} else {
-						mentions(`Yahh @${mentioned[0].split('@')[0]} Your position as an ancestor in the group has been removed🏃`, mentioned, true)
+						mentions(`Yahh @${mentioned[0].split('@')[0]} Ninte admin poyallo mwone...saavu🏃`, mentioned, true)
 						client.groupDemoteAdmin(from, mentioned)
 					}
 					break
@@ -1286,7 +1286,7 @@ switch(command) {
 					if (!isGroup) return reply(ind.groupo())
 					if (!isGroupAdmins) return reply(ind.admin())
 					if (!isBotGroupAdmins) return reply(ind.badmin())
-					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag target yang ingin di tendang!')
+					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('The target tag you want to kick!')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
 						teks = 'wow Hedsot >_< :\n'
@@ -1298,7 +1298,7 @@ switch(command) {
 						mentions(teks, mentioned, true)
 						client.groupAdd(from, [num])
 					} else {
-						mentions(`Successfully sucked  : @${mentioned[0].split('@')[0]}`, mentioned, true)
+						mentions(`Successfull : @${mentioned[0].split('@')[0]}`, mentioned, true)
 						client.groupRemove(from, mentioned)
 						}
 					break
@@ -1325,7 +1325,7 @@ switch(command) {
 	                .then(() => {client.sendMessage(from, options, text)})
 	                .then(() => {client.sendMessage(from, options, text)})
 					break
-                 case 'fitnah':
+                 case 'fith':
                   if (isBanned) return reply(ind.baned())
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))				
@@ -1350,7 +1350,7 @@ switch(command) {
                       client.updatePresence(from, Presence.composing) 
                       if (!isRegistered) return reply(ind.noregis())
                       if (isBanned) return reply(ind.baned())   
-                      client.sendMessage(from, 'eda mwone sangadam ayi ketto ok bei:)', text)
+                      client.sendMessage(from, 'eda mwone sangadam ayi ketto ok bei ini abhi parayand varilla:)', text)
                       }, 0)
                       break																									
 /*
@@ -1481,7 +1481,7 @@ switch(command) {
                 if (isLimit(sender)) return reply(ind.limitend(pusname))
 						res = await fetchJson(`https://tobz-api.herokuapp.com/api/nekonime?apikey=${TobzKey}`, {method: 'get'})
 						buffer = await getBuffer(res.result)
-						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Nih nekonime mu >_<'})
+						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Here is your nekonime >_<'})
 					await limitAdd(sender)
 					break
                 case 'nekonime':
@@ -1598,7 +1598,7 @@ switch(command) {
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 			data = await fetchJson(`https://tobz-api.herokuapp.com/api/happymod?q=${body.slice(10)}&apikey=${TobzKey}`)
 			hupo = data.result[0] 
-			teks = `*➸ Nama*: ${data.result[0].title}\n*➸ version*: ${hupo.version}\n*➸ size:* ${hupo.size}\n*➸ root*: ${hupo.root}\n*➸ purchase*: ${hupo.price}\n*➸ link*: ${hupo.link}\n*➸ download*: ${hupo.download}`
+			teks = `*➸ Name*: ${data.result[0].title}\n*➸ version*: ${hupo.version}\n*➸ size:* ${hupo.size}\n*➸ root*: ${hupo.root}\n*➸ purchase*: ${hupo.price}\n*➸ link*: ${hupo.link}\n*➸ download*: ${hupo.download}`
 			buffer = await getBuffer(hupo.image)
 			client.sendMessage(from, buffer, image, {quoted: mek, caption: `${teks}`})
 			await limitAdd(sender)
@@ -1665,7 +1665,7 @@ switch(command) {
                     })
 					await limitAdd(sender)
 					break
-                case 'virtex':
+                case 'bombx':
                   if (isBanned) return reply(ind.baned())
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
@@ -1673,7 +1673,7 @@ switch(command) {
 					await costum(virtex(pushname, prefix, botName, ownerName, getLevelingLevel, sender, _registered), text, tescuk, cr)
 					await limitAdd(sender)
 					break
-                case 'virtex2':
+                case 'bombx2':
                   if (isBanned) return reply(ind.baned())
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
@@ -1685,7 +1685,7 @@ switch(command) {
                   if (isBanned) return reply(ind.baned())
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
-                if (isGroup) return  reply( 'CANNOT BE IN THE KAK GROUP')
+                if (isGroup) return  reply( 'CANNOT BE IN THE  GROUP')
                 anug = getRegisteredRandomId(_registered).replace('@s.whatsapp.net','')
                 await reply('Find a partner >_<')
                 await reply(`wa.me/${anug}`)
@@ -1695,7 +1695,7 @@ switch(command) {
                   if (isBanned) return reply(ind.baned())
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
-                if (isGroup) return  reply( 'CANNOT BE IN THE KAK GROUP')
+                if (isGroup) return  reply( 'CANNOT BE IN THE  GROUP')
                 anug = getRegisteredRandomId(_registered).replace('@s.whatsapp.net','')
                 await reply('Find a partner >_<')
                 await reply(`wa.me/${anug}`)
@@ -1723,7 +1723,7 @@ if (!isRegistered) return reply(ind.noregis())
 if (isLimit(sender)) return reply(ind.limitend(pusname))
 if (args.length < 1) return reply(`「❗」Example : ${prefix}hartatahta botwa`)
 har = body.slice(12)
-reply('「❗」wait bro fly dumlu okay :v')
+reply('「❗」wait bro  :v')
 buffer = await getBuffer(`https://api.vhtear.com/hartatahta?text=${har}&apikey=${VhtearKey}`)
 client.sendMessage(from, buffer, image, {quoted: mek})
 await limitAdd(sender)
@@ -1732,9 +1732,9 @@ case 'cloudtext':
 if (isBanned) return reply(ind.baned())
 if (!isRegistered) return reply(ind.noregis())
 if (isLimit(sender)) return reply(ind.limitend(pusname))
-if (args.length < 1) return reply(`「❗」Contoh : ${prefix}cloudtext Ramlan`)
+if (args.length < 1) return reply(`「❗」Example : ${prefix}cloudtext ABHI`)
 cloud = body.slice(11)
-reply('「❗」wait bro fly dumlu okay')
+reply('「❗」wait bro ')
 buffer = await getBuffer(`https://api.xteam.xyz/textpro/cloudtext?text=${cloud}&APIKEY=${XteamKey}`)
 client.sendMessage(from, buffer, image, {quoted: mek})
 await limitAdd(sender)
