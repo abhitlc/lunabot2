@@ -49,7 +49,7 @@ const vcard = 'BEGIN:VCARD\n'
 prefix = '.'
 blocked = []   
 limitawal = 90000
-memberlimit =100
+memberlimit =0
 cr = '*LUNA MWOL VERIFIED*'
 
 /*
