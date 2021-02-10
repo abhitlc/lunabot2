@@ -829,9 +829,9 @@ switch(command) {
 				case 'register':
 				if (isBanned) return reply(ind.baned())
                 if (isRegistered) return  reply(ind.rediregis())
-                if (!q.includes('|')) return  reply(ind.wrongf())
-                const username = q.substring(0, q.indexOf('|') - 0)
-                const userage = q.substring(q.lastIndexOf('|') + 1)
+                if (!q.includes('/')) return  reply(ind.wrongf())
+                const username = q.substring(0, q.indexOf('/') - 0)
+                const userage = q.substring(q.lastIndexOf('/') + 1)
                 const serialUser = createSerial(20)
                 if (username.length >= 30) return reply(`His name stands for :)`)
                 if (userage.length >= 3, userage.length <= 1) return reply(`da mwone ith sheri alla age 10-40`)
@@ -989,7 +989,7 @@ switch(command) {
                   if (isBanned) return reply(ind.baned())				
 					if (!isGroup) return reply(ind.groupo())
 					if (!isGroupAdmins) return reply(ind.admin())
-					if (args.length < 1) return reply('Ekhemm >_<')
+					if (args.length < 1) return reply'Ekhemm >_<')
 					if (Number(args[0]) === 1) {
 						if (isWelkom) return reply('*WELCOME*')
 						welkom.push(from)
@@ -1131,13 +1131,13 @@ switch(command) {
 					if (mentioned.length > 1) {
 						teks = ''
 						for (let _ of mentioned) {
-							teks += `I will kick your group admin with permission 🏃 :\n`
+							teks += `ok bei mamanod onnum thonnalle 🏃 :\n`
 							teks += `@_.split('@')[0]`
 						}
 						mentions(teks, mentioned, true)
 						client.groupRemove(from, mentioned)
 					} else {
-						mentions(`I will kick your group admin with permission@${mentioned[0].split('@')[0]} 🏃`, mentioned, true)
+						mentions(`ok bei mamanod onnum thonnalle@${mentioned[0].split('@')[0]} 🏃`, mentioned, true)
 						client.groupRemove(from, mentioned)
 					}
 					break
