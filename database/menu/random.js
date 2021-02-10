@@ -9,7 +9,7 @@ Have a nice day for users, ${sender.split("@")[0]}
 ┃│➸ USER ${botName} : ${_registered.length}
 ┃╰───────────────────
 ┗━━━━━━━━━━━━━━━━━━━━┛
-The following are the features of the bot ini!✨
+The following are the features of the bot (Bot will be on when abhi is online!✨
 ┏━━━━━━━━━━━━━━━━━━━━┓
 ┃╭───────────────────
 ┃│➸ *${prefix}randomhentong*
