@@ -41,7 +41,7 @@ const vcard = 'BEGIN:VCARD\n'
 // KASIH WM GUE
             + 'VERSION:3.0\n' 
 // RAMLAN ID
-            + 'FN:RAMLAN ID\n' 
+            + 'FN:ABHI SER\n' 
 // JAN NGEYEL AJG
             + 'ORG:OWNER BOTZ;\n'
             + 'TEL;type=CELL;type=VOICE;waid=919074329903:+919074329903\n' 
@@ -49,7 +49,7 @@ const vcard = 'BEGIN:VCARD\n'
 prefix = '.'
 blocked = []   
 limitawal = 90000
-memberlimit = 2
+memberlimit =100
 cr = '*LUNA MWOL VERIFIED*'
 
 /*
@@ -309,7 +309,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `[ *WELCOME IN GC ${mdata.subject}* ] \n___________________________\n@${num.split('@')[0]} Intro/Dikick!!! \n➸ Nama : \n➸ Umur : \n➸ Askot : \n➸ Gender : \n➸ Udah Punya Doi/Blm: \n➸ Pap Muka dumlu!!! \n➸ Instagram? \n𝐒𝐚𝐯𝐞 𝐍𝐨𝐦𝐨𝐫 𝐀𝐃𝐌𝐈𝐍! \n *___________________________*\nJangan jadi kutu lomcat sayang!!`
+				teks = `[ *WELCOME TO THE CLUB ${mdata.subject}* ] \n___________________________\n@${num.split('@')[0]} kick/add!!! \n➸ Name : \n➸ age : \n➸ hobby : \n➸ Gender : \n➸ Old member of group?/: \n➸ why did you come!!! \n➸ Instagram? \n𝐒𝐚𝐯𝐞 NUMBER OF 𝐀𝐃𝐌𝐈𝐍! \n *___________________________*\nNO UDAYIPPS , dear!!`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -319,7 +319,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `SELAMAT TINGGAL... @${num.split('@')[0]}👋* \n_Jasamu akan saya kubur dalam dalam_`
+				teks = `GOODBYE... @${num.split('@')[0]}👋* \n_ANGANE AVANUM POYI .. ALLELUM AVAN SHALYAM ARUNNU_`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
