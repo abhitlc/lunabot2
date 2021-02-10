@@ -87,11 +87,11 @@ exports.registered = (username, userage, serialUser, time, sender, botName) => {
 }
 
 exports.cmdnf = (prefix, command) => {
-	return`command *${prefix}${command}* tidak di temukan\coba tulis *${prefix}menu*`
+	return`command *${prefix}${command}* not found\try writing *${prefix}menu*`
 }
 
 exports.owneresce = (pushname) => {
-	return`*maaf tapi ${pushname} bukan owner script*`
+	return`*sorry ${pushname} abhi owner script*`
 }
 exports.levelup = (pushname, sender, getLevelingXp,  getLevel, getLevelingLevel) => {
 	return`
