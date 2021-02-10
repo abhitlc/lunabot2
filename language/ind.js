@@ -23,7 +23,7 @@ exports.lvlnoon = () => {
 }
 
 exports.noregis = () => {
-	return`*「❗」NOT REGISTERED*\n*TO REGISTER ${prefix}register name/age* \n\n*example ${prefix}register ABHI|18*`
+	return`*「❗」NOT REGISTERED*\n*TO REGISTER ${prefix}register name/age* \n\n*example ${prefix}register ABHI/18*`
 }
 
 exports.baned = () => {
