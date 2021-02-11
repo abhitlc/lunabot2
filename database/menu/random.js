@@ -12,15 +12,15 @@ Have a nice day for users, ${sender.split("@")[0]}
 The following are the features of the bot (Bot will be on when abhi is online!✨
 ┏━━━━━━━━━━━━━━━━━━━━┓
 ┃╭───────────────────
-┃│➸ *${prefix}randomhentong*
-┃│➸ *${prefix}nekonime*
+┃│➸ *${prefix}18+(owner not published)*
+┃│➸ *${prefix}anime*
 ┃│➸ *${prefix}wibu*
-┃│➸ *${prefix}loli*
+┃│➸ *${prefix}grpanime*
 ┃│➸ *${prefix}neko*
-┃│➸ *${prefix}18+*
-┃│➸ *${prefix}husbu*
+┃│➸ *${prefix}18+(owner not published)*
+┃│➸ *${prefix}animemale*
 ┃│➸ *${prefix}kpop*
-┃│➸ *${prefix}anjing*
+┃│➸ *${prefix}cuteanimal*
 ┃│➸ *${prefix}pokemon*
 ┃╰───────────────────
 ┗━━━━━━━━━━━━━━━━━━━━┛
