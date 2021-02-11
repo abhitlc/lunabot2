@@ -1445,7 +1445,7 @@ switch(command) {
 					client.sendMessage(from, pok, image, { quoted: mek })
 					await limitAdd(sender)
 					break
-                case 'anjing':
+                case 'cuteanimal':
                   if (isBanned) return reply(ind.baned())
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
@@ -1484,7 +1484,7 @@ switch(command) {
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Here is your nekonime >_<'})
 					await limitAdd(sender)
 					break
-                case 'nekonime':
+                case 'anime':
                   if (isBanned) return reply(ind.baned())
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
@@ -1507,7 +1507,7 @@ switch(command) {
                                         client.sendMessage(from, buffer, image, {quoted: mek, caption: randomkpop})
                                         await limitAdd(sender)
                                         break
-                case 'husbu':
+                case 'animemale':
                   if (isBanned) return reply(ind.baned())
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
@@ -1518,7 +1518,7 @@ switch(command) {
 						client.sendMessage(from, buffer, image, {quoted: mek, caption: '>_<'})
 					await limitAdd(sender)
 					break
-                case 'loli':
+                case 'grpanime':
                   if (isBanned) return reply(ind.baned())
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
@@ -1529,7 +1529,7 @@ switch(command) {
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					await limitAdd(sender)
 					break					
-                case 'randomhentong':
+                case 'hentai':
                   if (isBanned) return reply(ind.baned())
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
