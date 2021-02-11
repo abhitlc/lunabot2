@@ -19,12 +19,12 @@ The following are the features of this bot!✨
 ┃│➸ *${prefix}rate*
 ┃│➸ *${prefix}seberapagay*
 ┃│➸ *${prefix}nangis*
-┃│➸ *${prefix}cium*
-┃│➸ *${prefix}peluk*
+┃│➸ *${prefix}kiss*
+┃│➸ *${prefix}hug*
 ┃│➸ *${prefix}truth*
 ┃│➸ *${prefix}dare*
 ┃│➸ *${prefix}timer*
-┃│➸ *${prefix}simi*
+┃│➸ *${prefix}not published*
 ┃╰───────────────────
 ┗━━━━━━━━━━━━━━━━━━━━┛
 🔰 -----[ *POWERED BY ${ownerName}* ]----- 🔰`
