@@ -1409,13 +1409,13 @@ switch(command) {
                 addKoinUser('6285559240360@s.whatsapp.net', fee)
                 reply(`*⟪ SUKSES ⟫*\n\npengiriman uang berhasil\n➸ dari : +${sender.split("@")[0]}\n➸ ke : +${tujuan}\n➸ jumlah transfer : ${jumblah}\n➸ pajak : ${fee}`)
                 break
-				case 'atm':
+				case 'am':
                   if (isBanned) return reply(ind.baned())				
 				if (!isRegistered) return reply(ind.noregis())
 				const kantong = checkATMuser(sender)
 				reply(ind.uangkau(pushname, sender, kantong))
 				break
-				case 'buylimit':
+				case 'buylim':
                   if (isBanned) return reply(ind.baned())				
 				if (!isRegistered) return reply(ind.noregis())
 				payout = body.slice(10)
