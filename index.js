@@ -884,7 +884,7 @@ switch(command) {
 					hobby = body.slice(1)
 					const hob =['Wheezing In Game','vaayinottam','friends ayitt thendi nadakkal','listeing to songs','football','cricket','penpillerde purake nadakkal','freefire','pubg',' Anime','cinemas','riding','family and friends','chugickal','eating and drinking and veruthe nadakkal']
 					const by = hob[Math.floor(Math.random() * hob.length)]
-					client.sendMessage(from, 'Pertanyaan : *'+hobby+'*\n\nJawaban : '+ by, text, { quoted: mek })
+					client.sendMessage(from, 'Question : *'+hobby+'*\n\nAnswer : '+ by, text, { quoted: mek })
 					await limitAdd(sender)
 					break
            case 'seberapagay':
