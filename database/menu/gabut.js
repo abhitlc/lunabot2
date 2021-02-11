@@ -17,7 +17,7 @@ The following are the features of this bot!✨
 ┃│➸ *${prefix}kapankah*
 ┃│➸ *${prefix}hobby*
 ┃│➸ *${prefix}rate*
-┃│➸ *${prefix}seberapagay*
+┃│➸ *${prefix}not published*
 ┃│➸ *${prefix}nangis*
 ┃│➸ *${prefix}kiss*
 ┃│➸ *${prefix}hug*
