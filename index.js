@@ -837,7 +837,7 @@ switch(command) {
                 if (userage.length >= 3, userage.length <= 1) return reply(`da mwone ith sheri alla age 10-40`)
                 veri = sender
                 if (isGroup) {
-                    addRegisteredUser(sender, username, userage, time, serialUser)
+                    addRegisteredUser(sender, username,  userage, time, serialUser)
                     await reply(ind.registered(username, userage, serialUser, time, sender))
                     addATM(sender)
                     addLevelingId(sender)
@@ -887,13 +887,13 @@ switch(command) {
 					client.sendMessage(from, 'Question : *'+hobby+'*\n\nAnswer : '+ by, text, { quoted: mek })
 					await limitAdd(sender)
 					break
-           case 'seberapagay':
+           case 'gay':
            if (isBanned) return reply(ind.baned())
            if (!isRegistered) return reply(ind.noregis())
            if (isLimit(sender)) return reply(ind.limitend(pusname))
 					gay = body.slice(13)
 		   anu = await fetchJson(`https://arugaz.herokuapp.com/api/howgay`, {method: 'get'})
-		   hasil = `Look at the Gay Si Data ${gay}\n\n\nPersentase Gay : ${anu.persen}%\nAlert!!! : ${anu.desc}`
+		   hasil = `Look at the Gay Data ${gay}\n\n\nPercentage Gay : ${anu.persen}%\nAlert!!! : ${anu.desc}`
 		   reply(hasil)
 		   await limitAdd(sender)
 					break
@@ -915,7 +915,7 @@ switch(command) {
 					})
 					await limitAdd(sender)
 					break
-					case 'cium':
+					case 'kiss':
 					if (isBanned) return reply(ind.baned())
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
@@ -933,7 +933,7 @@ switch(command) {
 					})
 					await limitAdd(sender)
 					break
-					case 'peluk':
+					case 'hug':
 					if (isBanned) return reply(ind.baned())
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
